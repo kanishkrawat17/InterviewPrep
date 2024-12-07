@@ -1,3 +1,4 @@
+/** ----------------------Question: 1 -----------------------*/
 function curringFunc(a) {
     return function (b) {
         if (b) {
@@ -10,8 +11,7 @@ function curringFunc(a) {
 console.log(curringFunc(1)(2)(5)(), "Ans-1")
 
 
-/** Question: 2 */
-
+/** ----------------------Question: 2 -----------------------*/
 function sumCurrying(...args) {
     const sum = args.reduce((acc, num) => acc + num, 0);
     return function (...innerArgs) {
