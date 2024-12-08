@@ -27,6 +27,7 @@ const result = Promise.allSettled([p1, p2, p3, p4, p5])
   .then((values) => console.log(values))
   .catch((err) => console.log(err));
 
+  /**-----------------------Polyfill of SetlledAll ---------------------------------------- */
 function customAllSetlled(promises) {
   let count = 0;
   let result = [];
